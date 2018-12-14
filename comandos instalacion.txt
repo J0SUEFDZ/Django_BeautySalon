@@ -1,0 +1,14 @@
+Working on:
+	Python 3.6.4
+	Django Version 2.1.4
+	PostgreSQL 10.6
+	Heroku-CLI 6.15.5
+
+-----Django REST Framework-----
+pip install djangorestframework
+pip install markdown
+pip install django-filter
+
+-----PostgreSQL-----
+https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-14-04
+https://tutorial-extensions.djangogirls.org/en/optional_postgresql_installation/

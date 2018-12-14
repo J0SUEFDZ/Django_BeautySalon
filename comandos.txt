@@ -1,0 +1,13 @@
+POSTGRES
+\dt ver tablas
+\l  ver bases datos
+\c <db> cambia base datos
+
+-->Cambios hechos al INSTALLED_APP
+    python manage.py migrate
+-->Cambios hechos al modelo
+    python manage.py makemigrations Beauty
+-->Configuracion Database/ Aplicar
+    python manage.py sqlmigrate polls 0001
+-->Aplicar cambiar hechos al modelo
+    python manage.py migrate
