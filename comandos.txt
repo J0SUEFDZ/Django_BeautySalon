@@ -11,3 +11,23 @@ POSTGRES
     python manage.py sqlmigrate polls 0001
 -->Aplicar cambiar hechos al modelo
     python manage.py migrate
+
+CONSOLA
+    python manage.py shell
+PYTHON POSTGRES
+Link=https://docs.djangoproject.com/en/2.1/topics/db/queries/
+from Beauty.models import Employee, Appointment
+-->Add
+e1 = Employee("name")
+e1.save
+-->Update
+e1.name = "Another name"
+e1.save()
+a = Appointment(employee=e1,created_at=timezone.now(),date=timezone.now())
+a.save()
+-->Delete
+e1.delete() /*Cascade, deletes the employee and all the appointments.
+
+SUPER USER
+name = josue
+pass = djangoadmin
