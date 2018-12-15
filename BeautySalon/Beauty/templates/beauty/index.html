@@ -1,0 +1,12 @@
+{% if list_appointments %}
+    {% for app in list_appointments %}
+        <ul>
+            <li>{{app.employee.name}}</li>
+            <li>{{app.created_at}}</li>
+            <li>{{app.date}}</li>
+        </ul>
+    {% endfor %}
+    
+{% else %}
+    <p>No appointments are available.</p>
+{% endif %}

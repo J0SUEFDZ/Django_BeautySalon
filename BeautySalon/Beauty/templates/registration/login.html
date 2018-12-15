@@ -1,0 +1,12 @@
+{% extends 'beauty/base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{%block content%}
+<h2>Login</h2>
+<form method="POST" action="/accounts/login/" class="site-form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Login">
+</form>
+{%endblock%}
