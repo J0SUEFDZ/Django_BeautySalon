@@ -8,8 +8,12 @@ html, body{
     height: 100%;
 }
 .content{
-    width: 40%;
-    height: 40%;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: -webkit-fit-content;
+    height: fit-content;
     position: absolute;
     top:0; bottom: 0;
     left: 0; right: 0;
@@ -18,12 +22,14 @@ html, body{
     max-width:100%;
     max-height:100%;
     overflow:auto;
+
+    background-color: rgba(200,200,200,0.2);
 }
 
 .logo{
     width: 50%;
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 main{
@@ -34,8 +40,20 @@ main{
     margin: 10px;
 }
 
-main a, main input{
-    color: peru;
+main p{
+    margin: 10px;
+}
+main a{
+    color: white;
     padding: 5px 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px dotted palegoldenrod;
+}
+
+main a:hover{
+    color: palegoldenrod;
+    font-weight: bolder;
+    border-bottom: none;
 }
 

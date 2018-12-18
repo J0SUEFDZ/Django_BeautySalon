@@ -1,13 +1,14 @@
-<!-- templates/home.html -->
 {% extends 'beauty/base.html' %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Employees{% endblock %}
 {% block logo %}"../../static/img/beauty_logo.jpg"{% endblock %}
 
 {% block content %}
 {% if user.is_authenticated %}
-  <p>Welcome {{ user.username }}!<a href="accounts/logout/">Logout</a></p>
-  <p>Add, edit or delete employees<a href="beauty/employees/">here</a></p>
+  
+  {% for em in employees%}
+  <p>{{em.name}}</p>
+  {%endfor%}
   
 {% else %}
   <p>You are not logged in</p>

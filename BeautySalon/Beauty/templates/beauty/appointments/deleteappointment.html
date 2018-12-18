@@ -1,0 +1,18 @@
+{% extends 'beauty/base.html' %}
+
+{% block title %}Delete Appointment{% endblock %}
+{% block logo %}"../../../static/img/beauty_logo.jpg"{% endblock %}
+{% block content %}
+{% if user.is_authenticated %}
+  <h2>Delete Appointment</h2>
+  <form method='POST' action='beauty/addEmployee'>
+    <label for="employee_name">Enter name: </label>
+    <input id="employee_name" type="text" name="name" value="John Doe">
+    <input type="submit" value="Add">
+  </form>
+  
+{% else %}
+  <p>You are not logged in</p>
+  <a href="accounts/login/">Login</a>
+{% endif %}
+{% endblock %}

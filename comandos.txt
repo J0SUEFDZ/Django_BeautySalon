@@ -8,7 +8,7 @@ POSTGRES
 -->Cambios hechos al modelo
     python manage.py makemigrations Beauty
 -->Configuracion Database/ Aplicar
-    python manage.py sqlmigrate polls 0001
+    python manage.py sqlmigrate Beauty 0001
 -->Aplicar cambiar hechos al modelo
     python manage.py migrate
 
@@ -27,6 +27,9 @@ a = Appointment(employee=e1,created_at=timezone.now(),date=timezone.now())
 a.save()
 -->Delete
 e1.delete() /*Cascade, deletes the employee and all the appointments.
+
+CARGAR STATIC
+    python manage.py collectstatic  
 
 SUPER USER
 name = josue

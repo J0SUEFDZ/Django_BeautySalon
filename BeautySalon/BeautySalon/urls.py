@@ -38,6 +38,7 @@ router.register(r'users', UserViewSet)
 
 urlpatterns = [
     #path('', include(router.urls)),
+    path('beauty/',include('Beauty.urls')),
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
     path('', TemplateView.as_view(template_name='beauty/home.html'), name='home'), # new

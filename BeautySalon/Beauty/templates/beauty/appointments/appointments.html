@@ -1,3 +1,8 @@
+{% extends 'beauty/base.html' %}
+
+{% block title %}Appointments{% endblock %}
+{% block logo %}"../../../static/img/beauty_logo.jpg"{% endblock %}
+{% block content %}
 {% if list_appointments %}
     {% for app in list_appointments %}
         <ul>
@@ -10,3 +15,4 @@
 {% else %}
     <p>No appointments are available.</p>
 {% endif %}
+{% endblock %}
